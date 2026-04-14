@@ -1,13 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.mavenproject1;
 
-/**
- *
- * @author LENOVO
- */
 public class Lab04Main {
-    
+    public static void main(String[] args) {
+        
+        Lecturer lec1 = new Lecturer("Dr. Perera", "L001", "Computing", 3, 50000.0);
+
+        System.out.println("--- Lecturer Details ---");
+        lec1.displayLecturerDetails();
+
+        System.out.println("Monthly Payment: " + lec1.calculateMonthlyPayment());
+    }
 }
