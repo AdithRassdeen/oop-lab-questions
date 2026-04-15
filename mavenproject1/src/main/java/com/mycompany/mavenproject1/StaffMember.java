@@ -46,5 +46,15 @@ public abstract class StaffMember {
     public static int getStaffCount() {
         return staffCount;
     }
+    
+    public void changeDepartment(String newDepartment) {
+        if (newDepartment != null && !newDepartment.isEmpty()) {
+            this.department = newDepartment;
+        }
+    }
+    
+    public final void showCommonNotice() {
+        System.out.println("Common Notice: All staff must submit their monthly reports by the 30th.");
+    }
 }
 
