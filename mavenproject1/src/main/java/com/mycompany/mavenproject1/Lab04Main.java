@@ -13,5 +13,15 @@ public class Lab04Main {
         System.out.println("\n--- Lab Assistant Details ---");
         lab1.displayLabAssistantDetails();
         System.out.println("Monthly Payment: " + lab1.calculateMonthlyPayment());
+        
+        System.out.println("\n--- University Policy Information ---");
+        UniversityPolicy.showPolicyHeader();
+        System.out.println("University Name: " + UniversityPolicy.UNIVERSITY_NAME);
+        
+        double lecBonus = UniversityPolicy.calculateBonus(lec1.calculateMonthlyPayment());
+        double labBonus = UniversityPolicy.calculateBonus(lab1.calculateMonthlyPayment());
+        
+        System.out.println("Lecturer Bonus Estimate: " + lecBonus);
+        System.out.println("Lab Assistant Bonus Estimate: " + labBonus);
     }
 }
