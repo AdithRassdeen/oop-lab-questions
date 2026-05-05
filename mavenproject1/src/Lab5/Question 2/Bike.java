@@ -1,19 +1,19 @@
 package Lab5;
 
 public class Bike extends Vehicle {
-    private int numberOfHours; //
-    private double hourlyRate; //
+    private int numberOfHours; 
+    private double hourlyRate; 
 
     public Bike(String vehicleNumber, String brand, int numberOfHours, double hourlyRate) {
-        super(vehicleNumber, brand); //
+        super(vehicleNumber, brand); 
         this.numberOfHours = numberOfHours;
         this.hourlyRate = hourlyRate;
     }
 
-    @Override //
+    @Override 
     public double calculateRentalCost() {
-        super.calculateRentalCost(); //
-        return numberOfHours * hourlyRate; //
+        super.calculateRentalCost();
+        return numberOfHours * hourlyRate; 
     }
 }
 
