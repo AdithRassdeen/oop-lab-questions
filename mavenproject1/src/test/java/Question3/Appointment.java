@@ -20,7 +20,6 @@ public class Appointment {
     public String getPatientCategory() { return patientCategory; }
     public double getBaseFee() { return baseFee; }
 
-    // Final Fee eka calculate karana method eka
     public double calculateFinalFee() {
         double finalFee = baseFee;
 
